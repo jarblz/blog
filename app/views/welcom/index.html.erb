@@ -1,16 +1,14 @@
 <h1>You're Here!</h1>
-<p color=green>
-	I came to atlanta to break into the freestyle street magic scene
+<p>
+	<font color=green>I came to atlanta to break into the freestyle street magic scene</font>
 </p>
 
-<table>
+<ul>
      <% i=0 %>
-     <% for name in @names%>
-       <% i++ %>
-       <tr>
-  <td><%= "#{i}" %></td>
-  <td><%= name.first %>"></td>
-       </tr>
- </table>
+     <% while i != 12%>
+       <% i+=1 %>
+  <li><%= "#{i}" %></li>
+      <% end %>
+</ul>
 
 
