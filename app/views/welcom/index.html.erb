@@ -1,8 +1,16 @@
 <h1>You're Here!</h1>
-<p>
-<ol>
-	<li>list o stuff
-	</li>
-</ol>
-
+<p color=green>
+	I came to atlanta to break into the freestyle street magic scene
 </p>
+
+<table>
+     <% i=0 %>
+     <% for name in @names%>
+       <% i++ %>
+       <tr>
+  <td><%= "#{i}" %></td>
+  <td><%= name.first %>"></td>
+       </tr>
+ </table>
+
+
