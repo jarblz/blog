@@ -1,13 +1,24 @@
 <h1>You're Here!</h1>
+<head>
+	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/welcom.css.scss">
+</head>
+<img src="/images/ice.jpg"
+<body>
 <p>
 	<font color=green>I came to atlanta to break into the freestyle street magic scene</font>
 </p>
 
 <ul>
-     <% i=0 %>
-     <% while i != 12%>
-       <% i+=1 %>
-  <li><%= "#{i}" %></li>
+     <% i= 37 %>
+     <% start=i %>
+     <% while i != -1%>
+     <li><% if i>=(start/2) %>
+     	<%= "you have a shit load of beer #{i}, to be exact" %>
+     	<% else %> <%= "you might want to get some more, only #{i} left" %>
+      <% end %>
+     </li>
+       <% i-=1 %>
+  
       <% end %>
 </ul>
 
