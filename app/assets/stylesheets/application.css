@@ -14,3 +14,40 @@ p {
 img { 
 	border:30px;
 }
+
+#navMain {
+    list-style:none;
+	font-family:tahoma;
+	font-size:12px;
+	border:1px #a81b2f solid;
+	float:left;
+	width:940px;
+	margin:0;
+	padding:0;
+	background:url('/images/nav-bg.jpg');
+	/* CSS3 border-radius allows you to round the corners of any image - pretty handy */
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#navMain > li{
+	float:left;
+	position:relative;
+	border-right:1px solid #9b2838;
+}
+#navMain > li > a{
+	color:#f4e4e6;
+	float:left;
+	text-decoration:none;
+	padding:11px 18px;
+	border-right:1px solid #bf3549;
+}
+#navMain .currentPage a{
+    background: rgb(99, 20, 32);
+    /* RGBa with 0.6 opacity */
+    background: rgba(99, 20, 32, 0.25);
+}
+#navMain ul {
+	display:none;
+}

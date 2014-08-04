@@ -1,17 +1,41 @@
-body {
-    background-color: #d0e4fe;
+
+
+#navMain {
+    list-style:none;
+	font-family:tahoma;
+	font-size:12px;
+	border:1px #a81b2f solid;
+	float:left;
+	width:940px;
+	margin:0;
+	padding:0;
+	background:url('images/nav-bg.jpg');
+	/* CSS3 border-radius allows you to round the corners of any image - pretty handy */
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
 }
 
-h1 {
-    color: orange;
-    text-align: center;
+#navMain > li {
+	float:left;
+	position:relative;
+	border-right:1px solid #9b2838;
 }
 
-p {
-    font-family: "Times New Roman";
-    font-size: 20px;
+#navMain > li > a{
+	color: #f4e4e6
+	float: left
+	text-decoration: none;
+	padding: 11px 18px;
+	border-right: 1px solid #bf3549
 }
-img { 
-	border:30px;
-	border-color:"black";
+
+#navMain .currentPage a{
+    background: rgb(99, 20, 32);
+    /* RGBa with 0.6 opacity */
+    background: rgba(99, 20, 32, 0.25);
+}
+
+#navMain ul {
+display:none;
 }

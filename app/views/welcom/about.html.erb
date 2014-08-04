@@ -1,0 +1,45 @@
+<!-- HTML 5 Doctype -->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<!-- boiler plate i would use if i didn't have the app managing my stylesheet path
+    <meta charset="UTF-8">
+    <link href="stylesheet.css" type="text/css" rel="stylesheet">
+    <title> CSS3 Navigation menu tutorial </title> -->
+ 
+    <!-- IE6-8 support of HTML5 elements --> <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body >
+ 
+    <!-- NAV menu -->
+    <nav>
+ 
+        <ul id="navMain">
+          <li><a href="/welcom/index"> home</a></li>
+          <li><a href="/welcom/about"> About</a></li>
+          <li><a href="/welcom/site_map"> Site Map</a></li>
+        </ul>
+    </nav>
+<p>
+	<br><font color=green>I came to atlanta to break into the freestyle street magic scene</font>
+
+</p>
+
+<ul>
+     <% i= 37 %>
+     <% start=i %>
+     <% while i != -1%>
+     <li><% if i>=(start/2) %>
+     	<%= "you have a shit load of beer #{i}, to be exact" %>
+     	<% else %> <%= "you might want to get some more, only #{i} left" %>
+      <% end %>
+     </li>
+       <% i-=1 %>
+  
+      <% end %>
+</ul>
+
+</body>
+</html>
