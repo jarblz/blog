@@ -1,7 +1,11 @@
 Blog::Application.routes.draw do
-  get "welcom/site_map"
-  get "welcom/index"
-  get "welcom/about"
+  root "welcom#index"
+  get "welcome/site_map" => "welcom#site_map"
+  get "welcome" => "welcom#index"
+  get "welcome/index" => "welcom#index"
+  get "welcome/about" =>"welcom#about"
+  get "about" => "welcom#about"
+  get "site_map" => "welcom#site_map"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
