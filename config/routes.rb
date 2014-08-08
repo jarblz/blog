@@ -6,6 +6,9 @@ Blog::Application.routes.draw do
   get "welcome/about" =>"welcom#about"
   get "about" => "welcom#about"
   get "site_map" => "welcom#site_map"
+  get "pics" => "welcom#pics"
+  get "welcome/pics" => "welcom#pics"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
