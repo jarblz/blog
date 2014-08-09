@@ -12,25 +12,10 @@
     <![endif]-->
 </head>
 <body>
- 
-    <!-- NAV menu -->
-    <nav>
- 
-        <ul id="navMain">
-          <li><a href="/welcome"> home</a></li>
-          <li><a href="/welcome/about"> About</a></li>
-          <li><a href="/welcome/site_map"> Site Map</a></li>
-        </ul>
-    </nav>
-    <!--end of my nav menu-->
-	<br>
+  <%= render :partial => 'nav' %>
+  <div id="main"
 	<h1><font color=green>I came to atlanta to break into the freestyle street magic scene</font></h1>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-  <br>
+
 <ul>
      <% i= 99 %>
      <% start=i %>
@@ -44,5 +29,6 @@
   
       <% end %>
 </ul>
-
+</div>
+</body>
 </html> 

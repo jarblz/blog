@@ -12,22 +12,12 @@
     <![endif]-->
 </head>
 <body >
- 
-    <!-- NAV menu -->
-    <nav>
- 
-        <ul id="navMain">
-          <li><a href="/welcome"> home</a></li>
-          <li><a href="/welcome/about"> About</a></li>
-          <li><a href="/welcome/site_map"> Site Map</a></li>
-        </ul>
-    </nav>
-    <!--end of my nav menu-->
-  <br>
-  <h1>
-    Welcome! feel free to look around at my kindergardener website
-  </h1>
-
+    <div id="main">  
+     <%= render :partial => 'nav' %>
+    <h1>
+      Welcome! feel free to look around at my kindergardener website
+    </h1>
+</div>
 
 </body>
 </html>

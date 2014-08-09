@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc2'
 
+#httparty ya'll
+gem 'httparty'
 # Use sqlite3 as the database for Development
 group:development do
 	  gem 'sqlite3'
