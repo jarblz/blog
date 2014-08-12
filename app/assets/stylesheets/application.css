@@ -52,12 +52,12 @@ img {
 #navMain ul {
 	display:none;
 }
-#main {
-	clear:left;
-}
 .box {
   display: inline-block;
   width: 200px;
   height: 100px;
   margin: 1em;
+}
+#main {
+	clear:left;
 }

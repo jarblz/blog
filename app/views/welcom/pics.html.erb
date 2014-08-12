@@ -1,31 +1,8 @@
-<!-- HTML 5 Doctype -->
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-<!-- boiler plate i would use if i didn't have the app managing my stylesheet path
-    <meta charset="UTF-8">
-    <link href="stylesheet.css" type="text/css" rel="stylesheet">
-    <title> CSS3 Navigation menu tutorial </title> -->
- 
-    <!-- IE6-8 support of HTML5 elements --> <!--[if lt IE 9]>
-    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-<title> PICS and SHIT</title>
-</head>
-<body>
-     <%= render :partial => 'nav' %>
-    <div id="main">
-  <div class=imgBlock>
-    <%= HTTParty.get('http://thecatapi.com/api/images/get?format=html') %>
-    <%= yield %>
-  </div>
+<div class=imgBlock>
+    <!--<%= HTTParty.get('http://thecatapi.com/api/images/get?format=html') %>-->
+    <% @img_urls.each do |key,value| %>
+    <img src="<%= value %>">
+    <% end %>
+
+
 </div>
-    <!--end of my nav menu-->
-  <br>
-  <h1>
-    some pics..
-  </h1>
-
-
-</body>
-</html>

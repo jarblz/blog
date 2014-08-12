@@ -1,14 +1,24 @@
-<!DOCTYPE html>
-<html>
+<!-- HTML 5 Doctype -->
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
+<!-- boiler plate i would use if i didn't have the app managing my stylesheet path
+    <meta charset="UTF-8">
+    <link href="stylesheet.css" type="text/css" rel="stylesheet">
+    <title> CSS3 Navigation menu tutorial </title> -->
+ 
+    <!-- IE6-8 support of HTML5 elements --> <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   <title>Blog</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
-</body>
+  <body>
+	<%= render :partial => 'nav' %>
+	<div id='main'>
+		<%= yield %>
+	</div>
+  </body>
 </html>
