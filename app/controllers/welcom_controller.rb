@@ -8,7 +8,29 @@ class WelcomController < ApplicationController
   	end
   @dt_first_visit = session['first_visit']
   end
-  def about
+
+  def set_name
+    @user_name=params['user_name']
+    session['user_name']=@user_name
+
+  end
+  
+  def about 
+    if !session['position']
+      session['stuff_list']=["this","is","stuff"]
+      session['sentance']=session['stuff_list'].join(" ")
+      session['position']=0
+      puts "pass1"
+    elsif session['position']==0
+      session['sentance']=session['stuff_list'][session['position']]
+      session['position']+=1
+    elsif session['position']==session['stuff_list'].length
+      session['sentance'] = "Finished"
+    else 
+      session['sentance']=session['sentance']+" "+session['stuff_list'][session['position']]
+      session['position']+=1
+    end
+    @message=session['sentance']
   end
   def site_map
   end

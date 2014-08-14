@@ -8,6 +8,7 @@ Blog::Application.routes.draw do
   get "site_map" => "welcom#site_map"
   get "pics" => "welcom#pics"
   get "welcome/pics" => "welcom#pics"
+  post "set_name" => "welcom#set_name"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
